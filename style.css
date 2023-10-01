@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+body{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, rgba(222,46,255,1) 45%, rgba(38,144,236,1) 100%);
+    background-size: 100%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width:350px;
+}
+p{margin:0}
+.form #qrTitle {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #000000;
+    font-size:  30px;
+}
+#qrcode-container{
+    display:none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}

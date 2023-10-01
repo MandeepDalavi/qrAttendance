@@ -6,7 +6,15 @@ function generateQRCode() {
     
     let qrcodeContainer = document.getElementById("qrcode");
     qrcodeContainer.innerHTML = "";
-    new QRCode(qrcodeContainer, dateTime);
+    new QRCode(qrcodeContainer,  {
+      text: dateTime,
+      width: 250,
+      height: 250,
+      colorDark: "#000000",
+      colorLight: "transparent",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+    
     document.getElementById("qrcode-container").style.display = "flex";
 }
 generateQRCode();
