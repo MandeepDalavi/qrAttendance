@@ -18,3 +18,12 @@ function generateQRCode() {
     document.getElementById("qrcode-container").style.display = "flex";
 }
 generateQRCode();
+setInterval(generateQRCode, 10000);
+
+function generateDateTime() {
+  var currdate = new Date().toDateString();
+  var currtime = new Date().toLocaleTimeString();
+  document.getElementById("curDate").textContent = currdate;
+  document.getElementById("curTime").textContent = currtime;
+}
+setInterval(generateDateTime, 999);
