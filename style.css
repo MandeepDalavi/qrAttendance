@@ -2,9 +2,7 @@
 body{
     width:100%;
     min-height: 100vh;
-    background: linear-gradient(-45deg, rgba(222,46,255,1) 45%, rgba(38,144,236,1) 100%);
-    background-size: 100%;
-    animation: gradient 15s ease infinite;
+    background: linear-gradient(-45deg, #DE2EFF 45%, #2690EC);
     display: flex;
     justify-content: center;
     align-items: center;
